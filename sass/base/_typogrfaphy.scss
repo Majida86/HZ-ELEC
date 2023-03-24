@@ -1,0 +1,12 @@
+body {
+    background-color: $noir;
+
+    h1, h2, h3 {
+        font-family: $fontTitre;
+        color: $rougeFoncé;
+    }
+
+    p {
+        font-family: $fontTexte;
+    }
+}
