@@ -1,12 +1,15 @@
 body {
     background-color: $noir;
+   
 
     h1, h2, h3 {
         font-family: $fontTitre;
-        color: $rougeFoncé;
+        color: $rouge;
     }
 
     p {
         font-family: $fontTexte;
+        color: $jaune;
+        font-size: 1.5rem;
     }
 }

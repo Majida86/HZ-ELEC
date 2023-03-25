@@ -1,0 +1,38 @@
+.bienvenue {
+    background-image: url(/images/imageprojet.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // padding-left: 100px;
+   
+  
+    .infos {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: $fontTexte;
+        font-size: 1.5rem;
+        color: $rougeFoncé;
+    }
+    
+    
+     h1 {
+        font-size: 3rem;
+        letter-spacing: 5px;
+        width: 40%;
+        text-align: center;
+        color: $rougeFoncé;
+         }
+         .fa-solid, .fa-regular {
+            font-size: 2rem;
+            padding-right: 1rem;
+         }
+         a {
+            color: $rougeFoncé;
+            
+         }
+}

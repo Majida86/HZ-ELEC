@@ -1,0 +1,95 @@
+main {
+   
+    padding: 30px 60px;
+    text-align: center;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding-bottom: 1rem;
+    }
+
+
+
+    .identite {
+
+
+        a {
+            color: $gris;
+           
+
+            &:hover {
+                color: $rouge;
+            }
+        }
+    }
+
+    .contactez-nous {
+        display: flex;
+
+
+        .contact {
+            text-align: left;
+            padding: 0 150px 0 100px;
+        }
+
+        form {
+            text-align: left;
+            line-height: 30px;
+        }
+
+        label {
+            color: $jaune;
+            font-family: $fontTexte;
+            font-weight: 600;
+        }
+
+        button {
+            color: $jaune;
+            font-family: $fontTexte;
+            margin: 2rem 4rem;
+
+            &:hover {
+                color: $rouge;
+            }
+        }
+    }
+    .pourquoi-nous {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      span {
+        color: $jaune;
+        font-family: $fontTexte;
+        font-size: 1.5rem;
+      } .caracteristique {
+        width: 250px;
+        text-align: left;
+      }
+      p {
+        font-size: medium;
+        text-align: left;
+        
+      }
+    } 
+    .avis {
+        display: flex;
+        flex-direction: column;
+        
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 35px;
+            align-self: center;
+        }
+        span {
+            color: $jaune;
+            padding: 1rem;
+        }
+
+    }
+}
