@@ -2,6 +2,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    background-color: $noir;
+    // padding: 1rem;
+    position: fixed;
+    width: 100%;
+    min-height: 85px;
+    z-index: 10002;
+   
     
 }
