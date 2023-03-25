@@ -5,12 +5,13 @@ const indexHeader = document.querySelector(".headerIndex");
 const imagesTable =
     [
         {image : "images/imageprojet.png"},
-        { image: "images/slider1.png"},
-        { image: "images/slider2.png"},
-        { image: "images/slider3.png"},
-        {image : "images/slider4.png"},
-        {image : "images/slider5.png"},
-        {image : "images/slider6.png"},
+        {image : "images/slider1.jpg"},
+        {image : "images/slider2.jpg"},
+        {image : "images/slider3.jpg"},
+        {image : "images/slider4.jpg"},
+        {image : "images/slider5.jpg"},
+        {image : "images/slider6.jpg"},
+       
     ]
 let slides = 0;
 
@@ -28,11 +29,11 @@ function nextSlide() {
 }
 
 function previousSlide() {
-    myInterval = setInterval(nextSlide, 4000)
+    myInterval = setInterval(nextSlide, 3000)
 }
 
 function autoPlay() {
-    myInterval = setInterval(nextSlide, 4000)
+    myInterval = setInterval(nextSlide, 3000)
 }
 
 //Evenements
