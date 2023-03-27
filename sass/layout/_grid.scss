@@ -5,29 +5,39 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     padding: 3rem 0;
+
+
+    img {
+        width: 100%;
+       height: 200px;
+        border-radius: 20px;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
 
     figure {
         position: relative;
-        // overflow: hidden;
-        
-        height: 250px;
-    }
-
-    img {
-        // object-fit: cover;
-        transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-    }
-
-    figcaption {
-        color: $jaune;
-        font-family: $fontTexte;
-        align-self: center;
-        font-size: large;
     
+
+        figcaption {
+            color: white;
+            font-weight: 600;
+            // padding: 20px;
+            font-family: $fontTexte;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: xx-large;
+            overflow: hidden;
+            position: absolute;
+            inset: 0px;
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+            &:hover {
+                backdrop-filter: blur(5px);
+            }
+
+        }
     }
 }
