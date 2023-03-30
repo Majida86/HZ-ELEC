@@ -1,30 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-    href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="sass/main.css">
     <title>Devis</title>
 </head>
+
 <body>
-    <header class="headerIndex">
+    <header class="headerDevis">
         <div id="btn-burger">☰</div>
         <nav>
             <img src="/images/Logo.jpg" alt="#" class="logo">
             <ul class="liens">
-                <li><a href="">ACCUEIL</a></li>
+                <li><a href="acceuil.html">ACCUEIL</a></li>
                 <li><a href="">L'ENTREPRISE</a></li>
                 <li><a href="">NOS SERVICES</a></li>
                 <li><a href="">CONTACT</a></li>
                 <li><a href="">DEVIS</a></li>
             </ul>
         </nav>
-        </header>
-        
-    <script src="https://kit.fontawesome.com/9876741200.js" crossorigin="anonymous"></script>  
+        <section class="devisHeader">
+            <p>Combien votre installation éléctrique va-t-elle coûter ?<br>Les tarifs peuvent varier selon votre projet
+                et votre ville.</p>
+            <img src="images/devis.png" alt="#">
+        </section>
+
+    </header>
+    <main class="devis">
+
+        <form>
+            <div class="page" id="page1">
+                <div>
+                    <p>Quel est le lieu de votre projet ?</p>
+                    <input type="text" required pattern="[0-9]{5}" placeholder="Entrez un code postal">
+                </div>
+                <div>
+                    <h3>Quel est le type de prestation souhaité ?</h3>
+                    <select name="prestation">
+                        <option value="">Rénovation</option>
+                        <option value="">Neuf</option>
+                        <option value="">Extension</option>
+                        <option value="">Autre</option>
+                    </select>
+                </div>
+                <button type="button">Suivant</button>
+            </div>
+            <div class="page" id="page2">
+                <div>
+                    <h3>Quel est le type de bâtiment ?</h3>
+                    <select name="bâtiment">
+                        <option value="">Appartement</option>
+                        <option value="">Maison individuelle</option>
+                        <option value="">Bureau</option>
+                        <option value="">Commerce</option>
+                        <option value="">Immeuble</option>
+                        <option value="">Local industriel</option>
+                        <option value="">Usine</option>
+                        <option value="">Autre</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Quelle est la surface en m² ?</h3>
+                    <input type="number">
+                </div>
+                <button type="button">Suivant</button>
+            </div>
+
+            <div class="page" id="page3">
+                <div>
+                    <h3>Quand aves-vous prévu de commencer votre projet ?</h3>
+                    <select name="date">
+                        <option value="">Au plus vite</option>
+                        <option value="">Dans moins d'un mois</option>
+                        <option value="">Dans moins de deux mois</option>
+                        <option value="">Dans moins de six mois</option>
+                        <option value="">Dans l'année</option>
+                        <option value="">Pas de date fixée</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Quelle est votre situation ?</h3>
+                    <select name="situation">
+                        <option value="">Particulier</option>
+                        <option value="">Société</option>
+                        <option value="">commerçant</option>
+                        <option value="">Industriel</option>
+                        <option value="">Profession libérale</option>
+                        <option value="">Syndic de copropriété</option>
+                        <option value="">Promoteur-constructeur</option>
+                        <option value="">Administration</option>
+                        <option value="">Association</option>
+                        <option value="">Architecte</option>
+                        <option value="">Autre</option>
+                    </select>
+                </div>
+                <button type="button">Suivant</button>
+            </div>
+            <div class="page" id="page4">
+                <h3>Ajoutez des précisions sur votre demande</h3>
+                <textarea name="précisions" id="précisions" cols="30" rows="10"
+                    placeholder="Exemple:Demande de raccordement en cours, déplacement ancien compteur, etc"></textarea>
+                <button type="button">Suivant</button>
+            </div>
+            <div class="page" id="page5">
+                <div>
+                    <h3>Qui avons-nous le plaisir d'aider aujourd'hui ?</h3>
+                    <fieldset>
+                        <ol>
+                            <li>
+                                <label for="nom">Nom</label>
+                                <input id="nom" name="nom" type="text" placeholder="Prénom et nom" required autofocus>
+                            </li>
+                            <li>
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" placeholder="exemple@xmail.com" required>
+                            </li>
+                            <li>
+                                <label for="tel">Téléphone</label>
+                                <input id="tel" name="tel" type="tel" placeholder="ex&nbsp;: 00 00 00 00 00"
+                                    pattern="0[1-9] [0-9] {8}">
+                            </li>
+                        </ol>
+                    </fieldset>
+                </div>
+                <button>Obtenir mes devis gratuits</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="infos">
+            <div class="info1">
+                <img src="/images/Logo.jpg" alt="#">
+                <p>Nous mettons votre satisfaction en premier lieu ! Nous nous engageons à être transparents, rigoureux,
+                    efficaces et rapides, peu importe où vous vous trouvez à Lille.
+                </p>
+            </div>
+            <div class="info2">
+                <h3>HORAIRES</h3>
+                <span>Lundi à Dimanche</span>
+                <span>8 h 00 à 19 h 00</span>
+            </div>
+            <div class="info3">
+                <h3>INFORMATIONS</h3>
+                <span>info@hzelec.tech</span>
+                <span>06 78 48 35 77 </span>
+                <span>LILLE</span>
+            </div>
+        </div>
+    </footer>
+    <script src="javascript/form.js"></script>
+    <script src="https://kit.fontawesome.com/9876741200.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
