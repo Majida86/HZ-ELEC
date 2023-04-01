@@ -26,22 +26,33 @@
             </ul>
         </nav>
         <section class="devisHeader">
-            <p>Combien votre installation éléctrique va-t-elle coûter ?<br>Les tarifs peuvent varier selon votre projet
-                et votre ville.</p>
-            <img src="images/devis.png" alt="#">
+            <div class="images">
+                <img src="images/devis1.png" alt="#">
+                <img src="images/devis2.png" alt="#">
+            </div>
+            <div>
+                <p>Nous mettons votre satisfaction en premier lieu ! Nous nous engageons à être transparents, rigoureux,
+                    efficaces et rapides, peu importe où vous vous trouvez .
+                </p>
+            </div>
+            <div class="images">
+                <img src="images/devis3.png" alt="#">
+                <img src="images/devis.png" alt="#">
+            </div>
         </section>
 
     </header>
-    <main class="devis">
-
-        <form>
+    <main>
+        <h3>Combien votre installation éléctrique va-t-elle coûter ?<br>Les tarifs peuvent varier selon votre projet
+            et votre ville.</h3>
+        <form class="devis">
             <div class="page" id="page1">
                 <div>
                     <p>Quel est le lieu de votre projet ?</p>
                     <input type="text" required pattern="[0-9]{5}" placeholder="Entrez un code postal">
                 </div>
                 <div>
-                    <h3>Quel est le type de prestation souhaité ?</h3>
+                    <p>Quel est le type de prestation souhaité ?</p>
                     <select name="prestation">
                         <option value="">Rénovation</option>
                         <option value="">Neuf</option>
@@ -49,11 +60,11 @@
                         <option value="">Autre</option>
                     </select>
                 </div>
-                <button type="button">Suivant</button>
+                <button class="next" type="button">Suivant</button>
             </div>
             <div class="page" id="page2">
                 <div>
-                    <h3>Quel est le type de bâtiment ?</h3>
+                    <p>Quel est le type de bâtiment ?</p>
                     <select name="bâtiment">
                         <option value="">Appartement</option>
                         <option value="">Maison individuelle</option>
@@ -66,15 +77,16 @@
                     </select>
                 </div>
                 <div>
-                    <h3>Quelle est la surface en m² ?</h3>
+                    <p>Quelle est la surface en m² ?</p>
                     <input type="number">
                 </div>
-                <button type="button">Suivant</button>
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
             </div>
 
             <div class="page" id="page3">
                 <div>
-                    <h3>Quand aves-vous prévu de commencer votre projet ?</h3>
+                    <p>Quand aves-vous prévu de commencer votre projet ?</p>
                     <select name="date">
                         <option value="">Au plus vite</option>
                         <option value="">Dans moins d'un mois</option>
@@ -85,7 +97,7 @@
                     </select>
                 </div>
                 <div>
-                    <h3>Quelle est votre situation ?</h3>
+                    <p>Quelle est votre situation ?</p>
                     <select name="situation">
                         <option value="">Particulier</option>
                         <option value="">Société</option>
@@ -100,17 +112,23 @@
                         <option value="">Autre</option>
                     </select>
                 </div>
-                <button type="button">Suivant</button>
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
             </div>
             <div class="page" id="page4">
-                <h3>Ajoutez des précisions sur votre demande</h3>
-                <textarea name="précisions" id="précisions" cols="30" rows="10"
-                    placeholder="Exemple:Demande de raccordement en cours, déplacement ancien compteur, etc"></textarea>
-                <button type="button">Suivant</button>
+                <p>Ajoutez des précisions sur votre demande</p>
+                <div>
+                    <textarea name="précisions" id="précisions" cols="30" rows="10"
+                        placeholder="Exemple:Demande de raccordement en cours, déplacement ancien compteur, etc"></textarea>
+                </div>
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
             </div>
             <div class="page" id="page5">
                 <div>
-                    <h3>Qui avons-nous le plaisir d'aider aujourd'hui ?</h3>
+                    <p>Qui avons-nous le plaisir d'aider aujourd'hui ?</p>
                     <fieldset>
                         <ol>
                             <li>
@@ -129,17 +147,18 @@
                         </ol>
                     </fieldset>
                 </div>
-                <button>Obtenir mes devis gratuits</button>
+                <button class="prev" type="button">Précédent</button>
+                <button id="terminer">Obtenir mes devis gratuits</button>
             </div>
+
         </form>
+
     </main>
     <footer>
         <div class="infos">
             <div class="info1">
                 <img src="/images/Logo.jpg" alt="#">
-                <p>Nous mettons votre satisfaction en premier lieu ! Nous nous engageons à être transparents, rigoureux,
-                    efficaces et rapides, peu importe où vous vous trouvez à Lille.
-                </p>
+                <p>Parce que chaque détail compte !</p>
             </div>
             <div class="info2">
                 <h3>HORAIRES</h3>
