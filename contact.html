@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="sass/main.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <div id="btn-burger">☰</div>
+        <nav>
+            <img src="/images/Logo.jpg" alt="#" class="logo">
+            <ul class="liens">
+                <li><a href="acceuil.html">ACCUEIL</a></li>
+                <li><a href="">L'ENTREPRISE</a></li>
+                <li><a href="">NOS SERVICES</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="Devis.html">DEVIS</a></li>
+            </ul>
+        </nav>
+        <section class="container-first">
+            <h1><span>Contactez </span><span>HZ ELEC </span><span>à </span><span>Lille </span><span>et </span><span>ses </span><span>alentours </span></h1>
+            
+        </section>
+    </header>
+    <main  class="contactez">
+        <!-- <h2>Notre entreprise est à votre entière disposition pour la concrétisation de votre projet</h2> -->
+        <section>
+            <div class="informations">
+                <div class="infos1">
+                    <h3>Infos Pratiques</h3>
+                    <span>HZ ELEC <br>
+                    1 Rue Théodore Monod <br>
+                    Lille 59160</span>
+                    <button><a href="tel:+33678483577">Appelez-nous</a></button>
+                    <button><a href="mailto:info@hzelec.tech">Envoyez-nous un email</a></button>
+                </div>
+                <div class="paiement">
+                    <h3>Moyens de paiements</h3>
+                    <ul>
+                        <li>Virement Bancaire</li>
+                        <li>Chèque Bancaire</li>
+                        <li>Espèces</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Horaires</h3>
+                    <span>7j/7 24h/24</span>
+                </div>
+            </div>
+            <div>
+                <form>
+                    <h3>Contactez-nous</h3>
+                    <div class="champs">
+                    <div class="champ">
+                        <label for="nom">Nom* :</label>
+                        <input type="text" name="nom" id="nom">
+                    </div>
+                    <div class="champ">
+                        <label for="prenom">Prénom* :</label>
+                        <input type="text" name="prenom" id="prenom">
+                    </div>
+                    <div class="champ">
+                        <label for="telephone">Téléphone* :</label>
+                        <input type="tel" name="telephone" id="telephone" pattern="0[1-9] [0-9] {8}">
+                    </div>
+                    <div class="champ">
+                        <label for="email">Email* :</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="champ"  id="message">
+                        <label for="message">Message* :</label>
+                        <textarea name="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button>ENVOYER UN MESSAGE</button>
+                </div>
+                   
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="infos">
+            <div class="info1">
+                <img src="/images/Logo.jpg" alt="#">
+                <p>Parce que chaque détail compte !</p>
+            </div>
+            <div class="info2">
+                <h3>HORAIRES</h3>
+                <span>Lundi à Dimanche</span>
+                <span>8 h 00 à 19 h 00</span>
+            </div>
+            <div class="info3">
+                <h3>INFORMATIONS</h3>
+                <span>info@hzelec.tech</span>
+                <span>06 78 48 35 77 </span>
+                <span>LILLE</span>
+            </div>
+        </div>
+    </footer>
+<script src="javascript/contact.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</body>
+
+</html>

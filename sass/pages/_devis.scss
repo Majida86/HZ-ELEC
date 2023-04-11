@@ -1,29 +1,28 @@
 .devisHeader {
     width: 70%;
-    padding-left: 50px;
+    height: 500px;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 
 
     img {
-        width: 220px;
-        height: 220px;
-        border-radius: 50%;
-        gap: 25px;
+        width: 30vw;
+        position: absolute;
+        right: 0;
+        border-radius: 25px;
     }
 
     p {
         color: $rouge;
         font-size: 2em;
+        line-height: 1em;
         text-align: center;
-    }
-
-    .images {
-        display: flex;
-        flex-direction: column;
-        gap: 70px;
+        position: absolute;
+        left: 0;
+        width: 30vw;
 
     }
 }

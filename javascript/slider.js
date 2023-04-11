@@ -28,29 +28,29 @@ function nextSlide() {
     }
 }
 
-function previousSlide() {
-    myInterval = setInterval(nextSlide, 3000)
-}
+// function previousSlide() {
+//     myInterval = setInterval(nextSlide, 3000)
+// }
 
 function autoPlay() {
-    myInterval = setInterval(nextSlide, 3000)
+    myInterval = setInterval(nextSlide, 4000)
 }
 
 //Evenements
-window.onload = autoPlay();
+ window.onload = autoPlay();
 
-rightButton.addEventListener("click", () => 
-  {
-    nextSlide();
-    clearInterval(myInterval);
-    autoPlay();
-   }
-)
+// rightButton.addEventListener("click", () => 
+//   {
+//     nextSlide();
+//     clearInterval(myInterval);
+//     autoPlay();
+//    }
+// )
 
-leftButton.addEventListener("click", () =>
-{
-    previousSlide();
-    clearInterval(myInterval);
-    autoPlay();
-}
-)
+// leftButton.addEventListener("click", () =>
+// {
+//     previousSlide();
+//     clearInterval(myInterval);
+//     autoPlay();
+// }
+// )
